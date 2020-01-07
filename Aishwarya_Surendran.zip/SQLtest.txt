@@ -1,0 +1,17 @@
+sql queries:
+
+1)SELECT * FROM TICKET
+WHERE (STATUS="booked" OR STATUS = "available")
+ AND
+(showdate BETWEEN 2020-01-04 and 2020-01-10 );
+
+
+
+
+2)  SELECT "available" || COUNT(STATUS)
+    FROM TICKET
+    WHERE STATUS="available";
+
+SELECT "BOOKED" || COUNT(STATUS)
+FROM TICKET
+WHERE STATUS="BOOKED";
